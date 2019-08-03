@@ -15,7 +15,19 @@ class App extends Component {
     topscore: 0
   }
 
-
+  gameCheck = () => {
+    if(this.state.score > this.state.topscore){
+      this.setState({topscore:this.state.score}, function(){
+        console.log(this.state.topscore);
+      });
+    }
+    this.state.cards.forEach(card=>{
+      card.count= 0;
+    });
+    alert(`Game over | Your Score: ${this.state.score}`);
+    this.setState({score:0});
+    return true;
+  }
 
   clickCount = id =>{
     this.state.cards.find((o,i) =>{
