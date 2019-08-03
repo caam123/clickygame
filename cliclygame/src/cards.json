@@ -2,7 +2,77 @@
     {
         "id": 1,
         "name": "Card 1",
-        "image": "../public/img/img-1.jpg",
+        "image": "https://files.genial.guru/files/news/part_0/441/1572810-maxresdefault-650-91c18b1c57-1508779059.jpg",
+        "count": 0
+    },
+
+    {
+        "id": 2,
+        "name": "Card 2",
+        "image": "https://files.genial.guru/files/news/part_0/441/1570560-9f2b5058848d8051dcb03ad069e570c5-650-59b689e7b7-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 3,
+        "name": "Card 3",
+        "image": "https://files.genial.guru/files/news/part_0/441/1572560-fe3cb9d9bcd3-650-1640823bfc-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 4,
+        "name": "Card 4",
+        "image": "https://files.genial.guru/files/news/part_0/441/1572260-cat-and-raccoon-friendship-650-591b4e1403-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 5,
+        "name": "Card 5",
+        "image": "https://files.genial.guru/files/news/part_0/441/1572210-photo-650-ee5b0d67c3-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 6,
+        "name": "Card 6",
+        "image": "https://files.genial.guru/files/news/part_0/441/1571710-1251396498_009-650-7f1e9555ea-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 7,
+        "name": "Card 7",
+        "image": "https://files.genial.guru/files/news/part_0/441/1573660-10-650-fdab0a1ad2-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 8,
+        "name": "Card 8",
+        "image": "https://files.genial.guru/files/news/part_0/441/1573410-flat800x800070f-650-261bdcc25a-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 9,
+        "name": "Card 9",
+        "image": "https://files.genial.guru/files/news/part_0/441/1569960-2048x2048-650-7f1e9555ea-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 10,
+        "name": "Card 10",
+        "image": "https://files.genial.guru/files/news/part_0/441/1569310-13460410-R3L8T8D-650-08-650-ee8f922cbb-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 11,
+        "name": "Card 11",
+        "image": "https://files.genial.guru/files/news/part_0/441/1569760-13462860-R3L8T8D-650-16-650-242938c3d5-1508779059.jpg",
+        "count": 0
+    },
+    {
+        "id": 12,
+        "name": "Card 12",
+        "image": "https://files.genial.guru/files/news/part_0/441/1572760-2f20b286da446057d539e92033d72f2b-650-408e59b22b-1508779059.jpg",
         "count": 0
     }
+    
+
+
 ]

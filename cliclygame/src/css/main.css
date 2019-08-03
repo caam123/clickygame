@@ -8,6 +8,9 @@ body{
     #bebebe 20px
     );
     height:100vh;
+    width:100vw;
+    overflow-x: hidden;
+
 }
 
 .container{
@@ -24,19 +27,29 @@ body{
 }
 
 .click-item{
-margin:0px;
+margin:0px auto;
 padding:0;
+float:left;
+width:100%;
+object-fit: cover;
 }
+
+.img-raccoon:active{
+    filter:blur(5px);
+    transform: scale(1.2);
+    transition:0.1s ease-in-out;
+    }
+    
 
 
 .img-raccoon{
     width:170px;
     height: 170px;
     object-fit: cover;
-    margin:0;
+    margin:10px 0;
     padding:0;
-    border-radius: 10px;
-    border:4px solid white;
+    border-radius: 15px;
+    border:3px solid white;
 }
 
 .nav{
@@ -51,4 +64,9 @@ padding:0;
 
 h2{
     font-size: 16px;
+}
+
+main{
+    padding:10px 200px;
+    overflow: hidden;
 }
