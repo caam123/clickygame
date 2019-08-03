@@ -15,6 +15,25 @@ class App extends Component {
     topscore: 0
   }
 
+
+
+  clickCount = id =>{
+    this.state.cards.find((o,i) =>{
+      if(o.id === id){
+        if(cards[i].count === 0){
+          cards[i].count =+ 1;
+          this.setState({score:this.state.score +1}, function(){
+            console.log(this.state.score);
+          });
+          this.state.cards.sort(()=> Math.random()- 0.5)
+          return true;
+        }else{
+          this.gameCheck();
+        }
+      }
+    });
+  }
+
   render(){
     return (
       <div>
