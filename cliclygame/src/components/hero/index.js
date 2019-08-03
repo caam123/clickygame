@@ -4,10 +4,10 @@ import "../../css/main.css";
 
 function Hero(){
     return(
-        <div class="row hero">
-            <div class="col-sm-12">
+        <div className="row hero">
+            <div className="col-sm-12">
                 <h1>Clicky Game</h1>
-                <p class = "instructions">Click on an image to earn points, but don't click on any more than once!</p>
+                <p className="instructions">Click on an image to earn points, but don't click on any more than once!</p>
             </div>
         </div>
     )

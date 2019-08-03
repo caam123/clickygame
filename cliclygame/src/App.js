@@ -15,7 +15,9 @@ class App extends Component {
     topscore: 0
   }
 
-  gameCheck = () => {
+
+
+  gameLost = () => {
     if(this.state.score > this.state.topscore){
       this.setState({topscore:this.state.score}, function(){
         console.log(this.state.topscore);
@@ -29,6 +31,19 @@ class App extends Component {
     return true;
   }
 
+  win = function(){
+    alert(`You Won! Your score was: ${this.state.score}`);
+    if(this.state.score > this.state.topscore){
+      this.setState({topscore: this.state.score});
+    }
+    this.state.cards.sort(()=>Math.random()-0.5)
+    this.setState({score:0});
+    this.state.cards.forEach(card =>{
+      card.count = 0;
+    })
+    return true;
+  }
+
   clickCount = id =>{
     this.state.cards.find((o,i) =>{
       if(o.id === id){
@@ -36,11 +51,15 @@ class App extends Component {
           cards[i].count =+ 1;
           this.setState({score:this.state.score +1}, function(){
             console.log(this.state.score);
+            if(this.state.score ==12){
+              this.win();
+            }
           });
-          this.state.cards.sort(()=> Math.random()- 0.5)
-          return true;
-        }else{
-          this.gameCheck();
+        this.state.cards.sort(()=>Math.random()-0.5)
+        return true;
+        }
+        else{
+          this.gameLost();
         }
       }
     });
@@ -49,11 +68,14 @@ class App extends Component {
   render(){
     return (
       <div>
-       <Navbar/>
+       <Navbar
+       score= {this.state.score}
+       topscore= {this.state.topscore}/>
        <Hero/>
        <main>
        {this.state.cards.map(card => (
          <Cards
+         clickCount = {this.clickCount}
          id = {card.id}
          key = {card.id}
          image = {card.image}
