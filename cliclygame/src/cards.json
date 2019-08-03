@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "name": "Card 1",
+        "image": "../public/img/img-1.jpg",
+        "count": 0
+    }
+]

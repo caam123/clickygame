@@ -1,0 +1,54 @@
+body{
+    color:white;
+    background: repeating-linear-gradient(
+    45deg,
+    #ebebeb,
+    #ebebeb 10px,
+    #bebebe 10px,
+    #bebebe 20px
+    );
+    height:100vh;
+}
+
+.container{
+    width:70vw;
+}
+
+.hero{
+    text-align: center;
+    margin-bottom: 30px;
+    padding:70px 25px 25px 10px;
+    background-color: rgb(51, 51, 51);
+
+
+}
+
+.click-item{
+margin:0px;
+padding:0;
+}
+
+
+.img-raccoon{
+    width:170px;
+    height: 170px;
+    object-fit: cover;
+    margin:0;
+    padding:0;
+    border-radius: 10px;
+    border:4px solid white;
+}
+
+.nav{
+    background-color:black;
+    color:white;
+    padding:10px;
+    position:fixed;
+    width:100vw;
+    clear:both;
+    z-index: 99999;
+}
+
+h2{
+    font-size: 16px;
+}
